@@ -1,0 +1,20 @@
+{
+ "manifest_version": 2,
+ "name": "ytfs",
+ "version": "1",
+ "content_scripts": [
+  {
+   "matches": ["https://www.youtube.com/*"],
+   "js": ["content.js"]
+  }
+ ],
+ "background": {
+  "scripts": ["background.js"]
+ },
+ "browser_action": {
+  "default_icon": "ic.png"
+ },
+ "permissions": [
+   "tabs"
+ ]
+}
